@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --second-color: #6089B7;
+  --primary-color: #0B3C72;
+
+}
+
+body {
+  font-family: 'Montserrat', 'Domine', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+}
+
+a {
+  color: #131313;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center logo and text vertically */
+}
+
+.navbar .logo {
+  flex: 0 0 auto; /* Prevent the logo from shrinking or growing */
+  margin-right: 150px; /* Add space between the logo and the text */
+  margin-left: 20px;
+}
+
+.navbar .logo img {
+  height: auto;
+  width: 300px; /* Set your preferred logo width */
+}
+
+.navbar .main-menu {
+  flex: 1; /* Allow the menu to take up the remaining space */
+  display: flex;
+  justify-content: flex-end; /* Align the menu to the right */
+}
+
+.navbar .main-menu ul {
+  display: flex;
+  align-items: center; /* Ensure the text is vertically centered */
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Add hover effect */
+.navbar ul li a:hover {
+  color: var(--second-color);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Aligning the dropdown icon */
+.navbar ul li .btn {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li .btn i {
+  margin-left: 5px; /* Adds space between text and icon */
+  font-size: 0.85em; /* Optional: make the icon slightly smaller */
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
